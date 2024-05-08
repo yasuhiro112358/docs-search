@@ -15,56 +15,67 @@
 
 <body class="bg-light">
   <div class="container mt-2 mb-2">
-    
+
     <form action="" method="">
 
       <div class="row">
-        <div class="col-8 pe-0">
+        <div class="col-9 pe-0">
           <!-- Query -->
-          <input type="text" class="form-control" id="search-query" placeholder="Type or Paste here" autofocus>
+          <input type="text" class="form-control rounded-1" id="search-query" placeholder="Type or Paste here" autofocus>
         </div>
 
-        <div class="col-4">
+        <div class="col-3">
           <!-- Search Button -->
-          <button class="btn btn-primary w-100" id="btn-search">Search</button>
+          <button class="btn btn-primary w-100 rounded-1" id="btn-search">Search</button>
         </div>
       </div>
 
-
-  
       <!-- Site Selector -->
       <div class="d-flex flex-wrap mt-3 mb-2">
+
+        <!-- HTML/CSS/JS -->
         <div>
           <input type="checkbox" class="btn-check" id="html-css-js" value="html-css-js">
-          <label class="btn btn-outline-danger rounded-0 m-1" for="html-css-js">HTML/CSS/JS</label>
+          <label class="btn btn-outline-danger rounded-1 m-1" id="html-css-js-label" for="html-css-js"><span
+              id="html-label">HTML</span> <span id="css-label">CSS</span> <span id="js-label">JS</span></label>
         </div>
 
+        <!-- Bootstrap 5 -->
         <div>
           <input type="checkbox" class="btn-check" id="bootstrap-5" value="bootstrap-5">
-          <label class="btn btn-outline-primary rounded-0 m-1" for="bootstrap-5">Bootstrap 5</label>
+          <label class="btn btn-outline-primary rounded-1 m-1" id="bootstrap-5-label" for="bootstrap-5">Bootstrap
+            5</label>
         </div>
 
+        <!-- Chart.js -->
+        <div>
+          <input type="checkbox" class="btn-check" id="chart-js" value="chart-js">
+          <label class="btn btn-outline-danger rounded-1 m-1" id="chart-js-label" for="chart-js">Chart.js</label>
+        </div>
+
+        <!-- PHP -->
         <div>
           <input type="checkbox" class="btn-check" id="php" value="php">
-          <label class="btn btn-outline-primary rounded-0 m-1" for="php">PHP</label>
+          <label class="btn btn-outline-primary rounded-1 m-1" id="php-label" for="php">PHP</label>
         </div>
 
+        <!-- Laravel 11 -->
         <div>
           <input type="checkbox" class="btn-check" id="laravel-11" value="laravel-11">
-          <label class="btn btn-outline-danger rounded-0 m-1" for="laravel-11">Laravel 11</label>
+          <label class="btn btn-outline-danger rounded-1 m-1" id="laravel-11-label" for="laravel-11">Laravel 11</label>
         </div>
-        
+
+        <!-- Python -->
         <div>
           <input type="checkbox" class="btn-check" id="python" value="python">
-          <label class="btn btn-outline-warning rounded-0 m-1" for="python">Python</label>
+          <label class="btn btn-outline-warning rounded-1 m-1" id="python-label" for="python">Python</label>
         </div>
 
+        <!-- git -->
         <div>
           <input type="checkbox" class="btn-check" id="git" value="git">
-          <label class="btn btn-outline-danger rounded-0 m-1" for="git">git</label>
+          <label class="btn btn-outline-danger rounded-1 m-1" id="git-label" for="git">git</label>
         </div>
-        
-
 
       </div>
 

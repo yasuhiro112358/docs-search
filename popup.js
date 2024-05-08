@@ -13,6 +13,7 @@
       "laravel-11": "https://laravel.com/docs/11.x/",
       "python": "https://docs.python.org/",
       "git": "https://git-scm.com/",
+      "chart-js": "https://www.chartjs.org/",
     };
 
     const selected_docs = [];
