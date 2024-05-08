@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-light">
   <div class="container mt-2 mb-2">
     
     <form action="" method="">
@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-8 pe-0">
           <!-- Query -->
-          <input type="text" class="form-control" id="search-query" placeholder="">
+          <input type="text" class="form-control" id="search-query" placeholder="Type or Paste here" autofocus>
         </div>
 
         <div class="col-4">
@@ -33,43 +33,50 @@
 
   
       <!-- Site Selector -->
-      <div class="d-flex flex-wrap mt-3 mb-3">
+      <div class="d-flex flex-wrap mt-3 mb-2">
         <div>
           <input type="checkbox" class="btn-check" id="html-css-js" value="html-css-js">
-          <label class="btn btn-outline-primary rounded-0" for="html-css-js">HTML/CSS/JS</label>
+          <label class="btn btn-outline-danger rounded-0 m-1" for="html-css-js">HTML/CSS/JS</label>
         </div>
 
         <div>
           <input type="checkbox" class="btn-check" id="bootstrap-5" value="bootstrap-5">
-          <label class="btn btn-outline-primary rounded-0" for="bootstrap-5">bootstrap 5</label>
+          <label class="btn btn-outline-primary rounded-0 m-1" for="bootstrap-5">Bootstrap 5</label>
         </div>
 
         <div>
           <input type="checkbox" class="btn-check" id="php" value="php">
-          <label class="btn btn-outline-primary rounded-0" for="php">PHP</label>
-        </div>
-
-        <!-- <div>
-          <input type="checkbox" class="btn-check" id="php" value="php">
-          <label class="btn btn-outline-primary rounded-0" for="php">PHP</label>
+          <label class="btn btn-outline-primary rounded-0 m-1" for="php">PHP</label>
         </div>
 
         <div>
-          <input type="checkbox" class="btn-check" id="php" value="php">
-          <label class="btn btn-outline-primary rounded-0" for="php">PHP</label>
-        </div> -->
+          <input type="checkbox" class="btn-check" id="laravel-11" value="laravel-11">
+          <label class="btn btn-outline-danger rounded-0 m-1" for="laravel-11">Laravel 11</label>
+        </div>
+        
+        <div>
+          <input type="checkbox" class="btn-check" id="python" value="python">
+          <label class="btn btn-outline-warning rounded-0 m-1" for="python">Python</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="btn-check" id="git" value="git">
+          <label class="btn btn-outline-danger rounded-0 m-1" for="git">git</label>
+        </div>
+        
+
 
       </div>
 
-
-      <div>
+      <!-- Search Language -->
+      <!-- <div>
         <h3 class="fs-6 m-0">Search Language</h3>
         <input type="radio" id="english" name="language" value="en-US" checked>
         <label for="english">English</label>
 
         <input type="radio" id="japanese" name="language" value="ja" disabled>
         <label for="japanese">Japanese</label>
-      </div>
+      </div> -->
     </form>
 
     <p class="small text-center text-secondary m-0">
@@ -77,12 +84,6 @@
     </p>
 
   </div>
-
-
-  <!-- Bootstrap 5 -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script> -->
 
   <!-- Private JS -->
   <script src="popup.js"></script>
