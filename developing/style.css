@@ -4,7 +4,6 @@ body {
 
 /* HTML/CSS/JS */
 #html-css-js-label {
-
   color: #040404;
   border-color: #040404;
 }
@@ -79,8 +78,6 @@ body {
 #python:checked+#python-label {
   background-color: #FFDF5B;
   color: #3772A2;
-  /* background-color: #3772A2;
-  color: #FFDF5B; */
 }
 
 /* git */
