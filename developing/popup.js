@@ -9,11 +9,21 @@
     const official_docs = {
       "html-css-js": "https://developer.mozilla.org/",
       "bootstrap-5": "https://getbootstrap.com/docs/5.3/",
+      "node-js": "https://nodejs.org/",
+      // "node-js": "https://nodejs.org/docs/latest/api/",
+      // "npm": "https://www.npmjs.com/",
+      "npm": "https://docs.npmjs.com/",
+      "vite": "https://vitejs.dev/",
       "php": "https://www.php.net/",
       "laravel-11": "https://laravel.com/docs/11.x/",
       "python": "https://docs.python.org/",
+      "mysql": "https://dev.mysql.com/",
+      "docker": "https://docs.docker.com/",
+      "mamp": "https://documentation.mamp.info/",
       "git": "https://git-scm.com/",
       "chart-js": "https://www.chartjs.org/",
+      "openai": "https://platform.openai.com/",
+      // "wordpress": "https://wordpress.org/documentation/",
     };
 
     const selected_docs = [];

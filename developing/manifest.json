@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Docs Search",
     "description": "",
-    "version": "1.1",
+    "version": "1.2",
     
     "action": {
         "default_popup": "popup.html",
@@ -14,7 +14,6 @@
     },
 
     "permissions": [
-        "activeTab",
         "storage"
     ],
     

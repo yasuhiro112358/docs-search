@@ -69,15 +69,94 @@ body {
   color: white;
 }
 
+/* Node.js */
+#node-js-label {
+  color: #54A345;
+  border-color: #54A345;
+}
+
+#node-js:checked+#node-js-label {
+  background-color: #54A345;
+  color: white;
+}
+
+/* npm */
+#npm-label {
+  color: #CB0001;
+  border-color: #CB0001;
+}
+
+#npm:checked+#npm-label {
+  background-color: #CB0001;
+  color: white;
+}
+
+/* Vite */
+#vite-label {
+  color: #636CFF;
+  border-color: #636CFF;
+}
+
+#vite:checked+#vite-label {
+  background-color: #636CFF;
+  color: white;
+}
+
 /* Python */
 #python-label {
   color: #3772A2;
-  border-color: #FFDF5B;
+  /* border-color: #FFDF5B; */
+  border-color: #3772A2;
 }
 
 #python:checked+#python-label {
   background-color: #FFDF5B;
   color: #3772A2;
+  border-color: #3772A2;
+}
+
+/* MySQL */
+#mysql-label {
+  color: #01758F;
+  border-color: #01758F;
+}
+
+#mysql:checked+#mysql-label {
+  background-color: #01758F;
+  color: white;
+}
+
+/* OpenAI */
+#openai-label {
+  color: black;
+  border-color: black;
+}
+
+#openai:checked+#openai-label {
+  background-color: black;
+  color: white;
+}
+
+/* docker */
+#docker-label {
+  color: #1C63ED;
+  border-color: #1C63ED;
+}
+
+#docker:checked+#docker-label {
+  background-color: #1C63ED;
+  color: white;
+}
+
+/* MAMP */
+#mamp-label {
+  color: #F66826;
+  border-color: #F66826;
+}
+
+#mamp:checked+#mamp-label {
+  background-color: #F66826;
+  color: white;
 }
 
 /* git */
@@ -90,3 +169,20 @@ body {
   background-color: #F54D27;
   color: white;
 }
+
+/* WordPress */
+/* #wordpress-label { */
+  /* border-color: #444140; */
+  /* border-color: #01759B; */
+  /* color: #01759B; */
+  /* color: #444140;  */
+  /* color: white; */
+/* } */
+
+/* #wordpress:checked+#wordpress-label { */
+  /* background-color: #444140; */
+  /* background-color: #01759B; */
+  /* color: #01759B; */
+  /* color: white; */
+  /* color: #444140; */
+/* } */
