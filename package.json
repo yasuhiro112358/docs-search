@@ -1,0 +1,14 @@
+{
+  "name": "docs_search",
+  "version": "1.2.0",
+  "description": "DocsSearch",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && cp -r src/* dist/",
+    "zip": "cd dist && zip -r ../releases/docs_search_v0.0.0.zip *",
+    "release": "npm run build && npm run zip"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
