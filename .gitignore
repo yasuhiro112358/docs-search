@@ -1,0 +1,6 @@
+# ビルド成果物
+dist/
+releases/*.zip
+
+# Node modules
+node_modules/
