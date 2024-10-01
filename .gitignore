@@ -1,5 +1,6 @@
 # ビルド成果物
 dist/
+releases/
 releases/*.zip
 
 # Node modules
