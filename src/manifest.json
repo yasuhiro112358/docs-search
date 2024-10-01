@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Docs Search",
     "description": "",
-    "version": "1.2",
+    "version": "2.0.0",
     
     "action": {
         "default_popup": "popup.html",
