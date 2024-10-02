@@ -136,17 +136,17 @@
     Object.keys(groups).forEach(groupName => {
       // グループコンテナを作成
       const groupDiv = document.createElement('div');
-      groupDiv.classList.add('mb-0');
+      groupDiv.classList.add('mb-4');
 
       // グループ見出しを追加
       const h2 = document.createElement('h2');
-      h2.classList.add('m-0', 'small', 'text-muted', 'text-center');
+      h2.classList.add('text-sm', 'text-gray-500', 'text-center', 'mb-2');
       h2.textContent = groupName;
       groupDiv.appendChild(h2);
 
       // チェックボックスのコンテナを作成
       const checkboxContainer = document.createElement('div');
-      checkboxContainer.classList.add('d-flex', 'flex-wrap');
+      checkboxContainer.classList.add('flex', 'flex-wrap', 'justify-center');
 
       groups[groupName].forEach(site => {
         // チェックボックスとラベルを作成
@@ -154,27 +154,34 @@
 
         const input = document.createElement('input');
         input.type = 'checkbox';
-        input.classList.add('btn-check');
+        input.classList.add('hidden');
         input.id = site.id;
         input.value = site.id;
 
         const label = document.createElement('label');
-        label.classList.add('btn', 'btn-outline-primary', 'rounded-1', 'm-1', 'site-label');
+        label.classList.add('px-3', 'py-1', 'border', 'rounded', 'm-1', 'cursor-pointer', 'text-sm');
         label.setAttribute('for', site.id);
 
-        // カスタムプロパティを設定
-        label.style.setProperty('--site-color', site.color);
-        label.style.setProperty('--site-text-color', site.textColor || 'white');
-        if (site.backgroundColor) {
-          label.style.setProperty('--site-background-color', site.backgroundColor);
-        }
+        // スタイルを適用
+        label.style.color = site.color;
+        label.style.borderColor = site.color;
+
+        // チェック時のスタイルを設定
+        input.addEventListener('change', () => {
+          if (input.checked) {
+            label.style.backgroundColor = site.color;
+            label.style.color = site.textColor || 'white';
+          } else {
+            label.style.backgroundColor = 'transparent';
+            label.style.color = site.color;
+          }
+        });
+
+        // 初期状態を設定
+        label.style.backgroundColor = 'transparent';
 
         // ラベルのテキストを設定
-        if (Array.isArray(site.labels)) {
-          label.textContent = site.labels.join(' ');
-        } else {
-          label.textContent = site.labels;
-        }
+        label.textContent = site.labels.join(' ');
 
         // コンテナに追加
         div.appendChild(input);
@@ -233,6 +240,8 @@
       // 状態を復元
       chrome.storage.local.get([checkbox.id], (result) => {
         checkbox.checked = result[checkbox.id] || false;
+        // チェック状態に応じてスタイルを適用
+        checkbox.dispatchEvent(new Event('change'));
       });
     });
   });
