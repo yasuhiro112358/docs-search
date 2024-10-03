@@ -1,9 +1,10 @@
 # Docs Search
-- Google Chrome Extension
-- To search for official documentation for programming languages or techniques
-- For every programers, especially who is learning programming
 
-# Release Note
+## Description
+Find official documentation for all your programming needs!
+Perfect for web developers and learners looking for quick, reliable references.
+
+## Release Note
 v1.2   - Contents Update
 v1.1.1 - Minor Bug fix
 v1.1   - Contents Update
@@ -11,7 +12,7 @@ v1.0   - Initial Release
 
 ---
 
-# Development Note
+## Development Note
 
 ```bash
 npm install vite --save-dev # Install Vite
