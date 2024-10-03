@@ -5,177 +5,56 @@
   <meta charset="UTF-8">
   <title>Docs Search</title>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="tailwind.css">
 </head>
 
-<body class="bg-light">
-  <div class="container mt-2 mb-2">
-
-    <form action="" method="">
-
-      <!-- Input Area -->
-      <div class="row mb-2">
-        <div class="col-9 pe-0">
-          <!-- Query -->
-          <input type="text" class="form-control rounded-1" id="search-query" placeholder="Type or Paste here"
-            autofocus>
-        </div>
-
-        <div class="col-3">
-          <!-- Search Button -->
-          <button class="btn btn-primary w-100 rounded-1" id="btn-search">Search</button>
-        </div>
+<body>
+  <div class="container bg-gray-100 w-[600px] p-4 select-none">
+    <!-- Input Area -->
+    <div class="flex mb-4">
+      <div class="flex-grow pr-2">
+        <!-- Query -->
+        <input type="text" class="w-full p-2 border rounded-lg" id="search-query"
+          placeholder="Select docs, search within them!" autofocus>
       </div>
 
-      <!-- Site Selector -->
-      <div class="mb-2">
-
-        <!-- FE Dev -->
-        <div class="mb-0">
-          <h2 class="m-0 small text-muted text-center">
-            FE Dev
-          </h2>
-          <div class="d-flex flex-wrap">
-            <!-- HTML/CSS/JS -->
-            <div>
-              <input type="checkbox" class="btn-check" id="html-css-js" value="html-css-js">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="html-css-js-label" for="html-css-js"><span
-                  id="html-label">HTML</span> <span id="css-label">CSS</span> <span id="js-label">JS</span></label>
-            </div>
-
-            <!-- Bootstrap 5 -->
-            <div>
-              <input type="checkbox" class="btn-check" id="bootstrap-5" value="bootstrap-5">
-              <label class="btn btn-outline-primary rounded-1 m-1" id="bootstrap-5-label" for="bootstrap-5">Bootstrap
-                5</label>
-            </div>
-
-            <!-- Chart.js -->
-            <div>
-              <input type="checkbox" class="btn-check" id="chart-js" value="chart-js">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="chart-js-label" for="chart-js">Chart.js</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- BE Dev -->
-        <div class="mb-0">
-          <h2 class="m-0 small text-muted text-center">
-            BE Dev
-          </h2>
-
-          <!-- PHP family -->
-          <div class="d-flex flex-wrap">
-            <!-- PHP -->
-            <div>
-              <input type="checkbox" class="btn-check" id="php" value="php">
-              <label class="btn btn-outline-primary rounded-1 m-1" id="php-label" for="php">PHP</label>
-            </div>
-
-            <!-- Laravel 11 -->
-            <div>
-              <input type="checkbox" class="btn-check" id="laravel-11" value="laravel-11">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="laravel-11-label" for="laravel-11">Laravel
-                11</label>
-            </div>
-          </div>
-
-          <!-- Node.js family -->
-          <div class="d-flex flex-wrap">
-            <!-- Node.js -->
-            <div>
-              <input type="checkbox" class="btn-check" id="node-js" value="node-js">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="node-js-label" for="node-js">Node.js</label>
-            </div>
-
-            <!-- npm -->
-            <div>
-              <input type="checkbox" class="btn-check" id="npm" value="npm">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="npm-label" for="npm">npm</label>
-            </div>
-
-            <!-- Vite -->
-            <div>
-              <input type="checkbox" class="btn-check" id="vite" value="vite">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="vite-label" for="vite">Vite</label>
-            </div>
-          </div>
-
-          <!-- BE Dev - etc -->
-          <div class="d-flex flex-wrap">
-            <!-- Python -->
-            <div>
-              <input type="checkbox" class="btn-check" id="python" value="python">
-              <label class="btn btn-outline-warning rounded-1 m-1" id="python-label" for="python">Python</label>
-            </div>
-
-            <!-- MySQL -->
-            <div>
-              <input type="checkbox" class="btn-check" id="mysql" value="mysql">
-              <label class="btn btn-outline-warning rounded-1 m-1" id="mysql-label" for="mysql">MySQL</label>
-            </div>
-
-            <!-- OpenAI -->
-            <div>
-              <input type="checkbox" class="btn-check" id="openai" value="openai">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="openai-label" for="openai">OpenAI</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Etc -->
-        <div class="mb-0">
-          <h2 class="m-0 small text-muted text-center">
-            etc
-          </h2>
-          <div class="d-flex flex-wrap">
-            <!-- docker -->
-            <div>
-              <input type="checkbox" class="btn-check" id="docker" value="docker">
-              <label class="btn btn-outline-warning rounded-1 m-1" id="docker-label" for="docker">docker</label>
-            </div>
-
-            <!-- MAMP -->
-            <div>
-              <input type="checkbox" class="btn-check" id="mamp" value="mamp">
-              <label class="btn btn-outline-warning rounded-1 m-1" id="mamp-label" for="mamp">MAMP</label>
-            </div>
-
-            <!-- git -->
-            <div>
-              <input type="checkbox" class="btn-check" id="git" value="git">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="git-label" for="git">git</label>
-            </div>
-
-            <!-- WordPress -->
-            <!-- <div>
-              <input type="checkbox" class="btn-check" id="wordpress" value="wordpress">
-              <label class="btn btn-outline-danger rounded-1 m-1" id="wordpress-label" for="wordpress">WordPress</label>
-            </div> -->
-          </div>
-        </div>
+      <div class="w-1/5">
+        <!-- Search Button -->
+        <button type="button"
+          class="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition duration-200"
+          id="btn-search">Search</button>
       </div>
-    </form>
-
-    <!-- Footer -->
-    <div class="">
-      <p class="small text-center text-muted m-0">
-        &copy;2024 <a href="https://yasuhiro112358.github.io/" target="_blank"
-          class="text-decoration-none text-muted">Yasuhiro W</a> - <a
-          href="https://nabeyasu.com/privacy/docs-serch/privacy-policy.html" target="_blank">Privacy</a>
-      </p>
     </div>
 
+
+    <!-- Site Selector -->
+    <div id="site-selector" class="mb-2">
+      <!-- Header -->
+      <h2 class="text-sm text-center text-gray-500">Docs Selectors</h2>
+
+      <!-- Reset Selector -->
+      <div class="flex justify-start mb-2">
+        <!-- Reset button -->
+        <button type="button"
+          class="text-sm w-20 px-2 py-1 bg-gray-400 text-white rounded-full hover:bg-gray-500 active:bg-gray-600 transition duration-200"
+          id="btn-reset">× Reset</button>
+      </div>
+      <!-- チェックボックスはJavaScriptで動的に生成されます -->
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p class="text-xs text-center text-gray-500">
+        &copy;2024 <a href="https://yasuhiro112358.github.io/" target="_blank"
+          class="text-gray-500 hover:underline">Yasuhiro W</a> - <a
+          href="https://nabeyasu.com/privacy/docs-serch/privacy-policy.html" target="_blank"
+          class="text-blue-500 underline">Privacy</a>
+      </p>
+    </div>
   </div>
 
-
-  <!-- Custom JS -->
-  <script src="popup.js"></script>
+  <script type="module" src="popup.js"></script>
 </body>
 
 </html>
