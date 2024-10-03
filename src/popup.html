@@ -12,27 +12,35 @@
 <body>
   <div class="container bg-gray-100 w-[600px] p-4 select-none">
     <!-- Input Area -->
-    <div class="flex mb-2">
+    <div class="flex mb-4">
       <div class="flex-grow pr-2">
         <!-- Query -->
-        <input type="text" class="w-full p-2 border rounded-lg" id="search-query" placeholder="Type or Paste here"
-          autofocus>
+        <input type="text" class="w-full p-2 border rounded-lg" id="search-query"
+          placeholder="Select docs, search within them!" autofocus>
       </div>
 
       <div class="w-1/5">
         <!-- Search Button -->
-        <button type="button" class="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition duration-200" id="btn-search">Search</button>
+        <button type="button"
+          class="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition duration-200"
+          id="btn-search">Search</button>
       </div>
     </div>
 
+
     <!-- Site Selector -->
     <div id="site-selector" class="mb-2">
-      <!-- チェックボックスはJavaScriptで動的に生成されます -->
-    </div>
+      <!-- Header -->
+      <h2 class="text-sm text-center text-gray-500">Docs Selectors</h2>
 
-    <!-- Reset Selector -->
-    <div class="mt-4 mb-2">
-      <button type="button" class="text-sm w-full py-2 bg-gray-400 text-white rounded-lg hover:bg-gray-500 active:bg-gray-600 transition duration-200" id="btn-reset">Reset</button>
+      <!-- Reset Selector -->
+      <div class="flex justify-start mb-2">
+        <!-- Reset button -->
+        <button type="button"
+          class="text-sm w-20 px-2 py-1 bg-gray-400 text-white rounded-full hover:bg-gray-500 active:bg-gray-600 transition duration-200"
+          id="btn-reset">× Reset</button>
+      </div>
+      <!-- チェックボックスはJavaScriptで動的に生成されます -->
     </div>
 
     <!-- Footer -->

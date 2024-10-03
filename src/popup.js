@@ -86,6 +86,22 @@
       group: "Libraries"
     },
     {
+      id: "p5-js",
+      labels: ["p5.js"],
+      url: "https://p5js.org/reference/",
+      color: "#ED225C",
+      textColor: "white",
+      group: "Libraries"
+    },
+    {
+      id: "tweekpane",
+      labels: ["Tweakpane"],
+      url: "https://tweakpane.github.io/docs/",
+      color: "black",
+      textColor: "white",
+      group: "Libraries"
+    },
+    {
       id: "three-js",
       labels: ["Three.js"],
       url: "https://threejs.org/docs/",
@@ -138,6 +154,14 @@
       labels: ["OpenWeatherMap"],
       url: "https://openweathermap.org/",
       color: "#EB6E4A",
+      textColor: "white",
+      group: "APIs"
+    },
+    {
+      id: "mapbox",
+      labels: ["Mapbox"],
+      url: "https://docs.mapbox.com/",
+      color: "black",
       textColor: "white",
       group: "APIs"
     },
@@ -214,7 +238,7 @@
 
       // グループ見出しを追加
       const h2 = document.createElement('h2');
-      h2.classList.add('text-xs', 'text-gray-500', 'text-center', 'mb-1');
+      h2.classList.add('text-xs', 'text-gray-500', 'text-left', 'mb-1');
       h2.textContent = groupName;
       groupDiv.appendChild(h2);
 
@@ -233,7 +257,7 @@
         input.value = site.id;
 
         const label = document.createElement('label');
-        label.classList.add('px-4', 'py-2', 'border-2', 'rounded-full', 'cursor-pointer', 'text-md', 'select-none', 'block');
+        label.classList.add('px-4', 'py-1', 'border-2', 'rounded-full', 'cursor-pointer', 'text-base', 'select-none', 'block');
         label.setAttribute('for', site.id);
 
         // スタイルを適用
@@ -307,8 +331,8 @@
     // Enterキーで検索
     const searchQuery = document.getElementById('search-query');
     searchQuery.addEventListener('keydown', function (event) {
-      // Check if the 'Enter' key is pressed
-      if (event.key === 'Enter') {
+      // Check if the 'Enter' key is pressed and IME (Input Method Editor) is not active and the input exists
+      if (event.key === 'Enter' && (!event.isComposing && searchQuery.value.trim() !== '')) {
         // Prevent the default action (form submission, etc.)
         event.preventDefault();
         // Trigger the button click
