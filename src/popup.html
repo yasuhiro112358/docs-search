@@ -10,26 +10,26 @@
 </head>
 
 <body>
-  <div class="container bg-gray-100 w-[600px] p-4 select-none">
+  <div class="container bg-gray-100 w-[640px] p-4 select-none">
     <!-- Input Area -->
     <div class="flex mb-4">
       <div class="flex-grow pr-2">
         <!-- Query -->
-        <input type="text" class="w-full p-2 border rounded-lg" id="search-query"
+        <input type="text" class="w-full text-base p-2 border rounded-lg" id="search-query"
           placeholder="Select docs, search within them!" autofocus>
       </div>
 
-      <div class="w-1/5">
+      <div class="w-1/6">
         <!-- Search Button -->
         <button type="button"
-          class="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition duration-200"
+          class="w-full text-base p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:bg-blue-800 transition duration-200"
           id="btn-search">Search</button>
       </div>
     </div>
 
 
     <!-- Site Selector -->
-    <div id="site-selector" class="mb-2">
+    <div class="mb-2">
       <!-- Header -->
       <h2 class="text-sm text-center text-gray-500">Docs Selectors</h2>
 
@@ -40,7 +40,10 @@
           class="text-sm w-20 px-2 py-1 bg-gray-400 text-white rounded-full hover:bg-gray-500 active:bg-gray-600 transition duration-200"
           id="btn-reset">× Reset</button>
       </div>
-      <!-- チェックボックスはJavaScriptで動的に生成されます -->
+
+      <div id="site-selector" class="h-96 overflow-y-scroll">
+        <!-- チェックボックスはJavaScriptで動的に生成 -->
+      </div>
     </div>
 
     <!-- Footer -->

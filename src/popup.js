@@ -4,16 +4,32 @@
   // サイト情報の定義
   const sites = [
     {
-      id: "html-css-js",
-      labels: ["HTML", "CSS", "JS"],
-      url: "https://developer.mozilla.org/",
-      color: "#040404",
+      id: "html",
+      labels: ["HTML"],
+      url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      color: "#E54B20",
       textColor: "white",
       group: "Languages"
     },
     {
-      id: "typescript",
-      labels: ["TypeScript"],
+      id: "css",
+      labels: ["CSS"],
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      color: "#214CE4",
+      textColor: "white",
+      group: "Languages"
+    },
+    {
+      id: "js",
+      labels: ["JS"],
+      url: "https://developer.mozilla.org/en-US/docs/Web",
+      color: "#F7E029",
+      textColor: "black",
+      group: "Languages"
+    },
+    {
+      id: "ts",
+      labels: ["TS"],
       url: "https://www.typescriptlang.org/docs/",
       color: "#3178C6",
       textColor: "white",
@@ -38,12 +54,12 @@
       group: "Languages"
     },
     {
-      id: "bootstrap-5",
-      labels: ["Bootstrap 5"],
-      url: "https://getbootstrap.com/docs/5.3/",
-      color: "#6F2CF4",
+      id: "java",
+      labels: ["Java"],
+      url: "https://docs.oracle.com/en/java/",
+      color: "#5283A2", 
       textColor: "white",
-      group: "Libraries"
+      group: "Languages"
     },
     {
       id: "tailwind-css",
@@ -54,18 +70,18 @@
       group: "Libraries"
     },
     {
-      id: "jquery",
-      labels: ["jQuery"],
-      url: "https://api.jquery.com/",
-      color: "#0869AD",
+      id: "bootstrap-5",
+      labels: ["Bootstrap 5"],
+      url: "https://getbootstrap.com/docs/5.3/",
+      color: "#6F2CF4",
       textColor: "white",
       group: "Libraries"
     },
     {
-      id: "react",
-      labels: ["React"],
-      url: "https://react.dev/",
-      color: "#58C4DC",
+      id: "jquery",
+      labels: ["jQuery"],
+      url: "https://api.jquery.com/",
+      color: "#0869AD",
       textColor: "white",
       group: "Libraries"
     },
@@ -110,12 +126,68 @@
       group: "Libraries"
     },
     {
+      id: "express",
+      labels: ["Express"],
+      url: "https://expressjs.com/",
+      color: "#0E1117",
+      textColor: "white",
+      group: "BE Frameworks & Node.js"
+    },
+    {
+      id: "node-js",
+      labels: ["Node.js"],
+      url: "https://nodejs.org/",
+      color: "#54A345",
+      textColor: "white",
+      group: "BE Frameworks & Node.js"
+    },
+    {
       id: "laravel-11",
       labels: ["Laravel 11"],
       url: "https://laravel.com/docs/11.x/",
       color: "#EF3D2E",
       textColor: "white",
-      group: "Frameworks, CMSs and Databases"
+      group: "BE Frameworks & Node.js"
+    },
+    {
+      id: "spring-boot",
+      labels: ["Spring Boot"],
+      url: "https://spring.io/projects/spring-boot",
+      color: "#6DB53D",
+      textColor: "white",
+      group: "BE Frameworks & Node.js"
+    },
+    {
+      id: "react",
+      labels: ["React"],
+      url: "https://react.dev/",
+      color: "#58C4DC",
+      textColor: "white",
+      group: "FE Frameworks for Web"
+    },
+    {
+      id: "react-native",
+      labels: ["React Native"],
+      url: "https://reactnative.dev/",
+      color: "#61D9FB",
+      textColor: "white",
+      group: "FE Frameworks for Mobile"
+    },
+    {
+      id: "electron",
+      labels: ["Electron"],
+      url: "https://www.electronjs.org/",
+      color: "#9EEAF9",
+      textColor: "black",
+      group: "FE Frameworks for Desktop"
+    },
+    {
+      id: "javafx",
+      labels: ["JavaFX"],
+      url: "https://openjfx.io/",
+      color: "#52D3A9",
+      textColor: "white",
+      group: "FE Frameworks for Desktop"
     },
     {
       id: "wordpress",
@@ -123,7 +195,7 @@
       url: "https://wordpress.org/documentation/",
       color: "#01759B",
       textColor: "white",
-      group: "Frameworks, CMSs and Databases"
+      group: "CMSs"
     },
     {
       id: "mysql",
@@ -131,7 +203,7 @@
       url: "https://dev.mysql.com/",
       color: "#01758F",
       textColor: "white",
-      group: "Frameworks, CMSs and Databases"
+      group: "DBMSs"
     },
     {
       id: "openai",
@@ -166,20 +238,12 @@
       group: "APIs"
     },
     {
-      id: "node-js",
-      labels: ["Node.js"],
-      url: "https://nodejs.org/",
-      color: "#54A345",
-      textColor: "white",
-      group: "Envs & Tools"
-    },
-    {
       id: "npm",
       labels: ["npm"],
       url: "https://docs.npmjs.com/",
       color: "#CB0001",
       textColor: "white",
-      group: "Envs & Tools"
+      group: "Dev Tools"
     },
     {
       id: "vite",
@@ -187,7 +251,7 @@
       url: "https://vitejs.dev/",
       color: "#636CFF",
       textColor: "white",
-      group: "Envs & Tools"
+      group: "Dev Tools"
     },
     {
       id: "docker",
@@ -195,7 +259,7 @@
       url: "https://docs.docker.com/",
       color: "#1C63ED",
       textColor: "white",
-      group: "Envs & Tools"
+      group: "Dev Tools"
     },
     {
       id: "mamp",
@@ -203,7 +267,7 @@
       url: "https://documentation.mamp.info/",
       color: "#F66826",
       textColor: "white",
-      group: "Envs & Tools"
+      group: "Dev Tools"
     },
     {
       id: "git",
@@ -211,7 +275,7 @@
       url: "https://git-scm.com/",
       color: "#F54D27",
       textColor: "white",
-      group: "Envs & Tools"
+      group: "Dev Tools"
     },
 
   ];
