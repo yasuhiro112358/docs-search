@@ -5,6 +5,7 @@ Find official documentation for all your programming needs!
 Perfect for web developers and learners looking for quick, reliable references.
 
 ## Release Note
+- v2.1.1 - Update contents
 - v2.1.0 - Update design and contents
 - v2.0.0 - Update design and contents for better user experience
 - v1.2.0 - Contents Update

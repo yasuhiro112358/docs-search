@@ -150,6 +150,14 @@
       group: "BE Frameworks & Node.js"
     },
     {
+      id: "flask",
+      labels: ["Flask"],
+      url: "https://flask.palletsprojects.com/en/3.0.x/",
+      color: "#38A8BE",
+      textColor: "white",
+      group: "BE Frameworks & Node.js"
+    },
+    {
       id: "spring-boot",
       labels: ["Spring Boot"],
       url: "https://spring.io/projects/spring-boot",
