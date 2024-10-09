@@ -5,13 +5,13 @@ Find official documentation for all your programming needs!
 Perfect for web developers and learners looking for quick, reliable references.
 
 ## Release Note
-- v2.1.1 - Update contents
-- v2.1.0 - Update design and contents
-- v2.0.0 - Update design and contents for better user experience
-- v1.2.0 - Contents Update
-- v1.1.1 - Minor Bug fix
-- v1.1.0 - Contents Update
-- v1.0.0 - Initial Release
+v2.1.1 (2024-10-09) - Update contents
+v2.1.0 (2024-10-08) - Update design and contents
+v2.0.0 - Update design and contents for better user experience
+v1.2.0 - Contents Update
+v1.1.1 - Minor Bug fix
+v1.1.0 - Contents Update
+v1.0.0 (2024-05-08) - Initial Release
 
 ---
 
