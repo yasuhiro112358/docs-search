@@ -126,6 +126,14 @@
       group: "Libraries"
     },
     {
+      id: "axios",
+      labels: ["Axios"],
+      url: "https://axios-http.com/",
+      color: "#6D24E0",
+      textColor: "white",
+      group: "Libraries"
+    },
+    {
       id: "express",
       labels: ["Express"],
       url: "https://expressjs.com/",
